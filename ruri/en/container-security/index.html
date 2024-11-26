@@ -512,6 +512,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#hidepid" class="md-nav__link">
+    <span class="md-ellipsis">
+      hidepid:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#no-new-privs" class="md-nav__link">
     <span class="md-ellipsis">
       No new privs:
@@ -812,6 +821,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#hidepid" class="md-nav__link">
+    <span class="md-ellipsis">
+      hidepid:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#no-new-privs" class="md-nav__link">
     <span class="md-ellipsis">
       No new privs:
@@ -892,6 +910,8 @@ Unshare container will use pivot_root(2) instead chroot(2), so it's more secure.
 <p>Ruri has a built-in Seccomp profile, you can enable it by using <code>-s</code> option.    <br />
 If this profile does not fit your needs, you can edit src/seccomp.c and write your own Seccomp rules.      </p>
 <h2 id="radical">Radical:<a class="headerlink" href="#radical" title="Permanent link">&para;</a></h2>
+<h3 id="hidepid">hidepid:<a class="headerlink" href="#hidepid" title="Permanent link">&para;</a></h3>
+<p>Ruri supports mount /proc with hidepid option, use <code>-i 1/2</code> to enable it.      </p>
 <h3 id="no-new-privs">No new privs:<a class="headerlink" href="#no-new-privs" title="Permanent link">&para;</a></h3>
 <p>Ruri supports enable no_new_privs bit by <code>-n</code> option, after enabling this, command like <code>sudo</code> will be unavailable for common user.      </p>
 <h3 id="mount-as-read-only">Mount / as read-only:<a class="headerlink" href="#mount-as-read-only" title="Permanent link">&para;</a></h3>

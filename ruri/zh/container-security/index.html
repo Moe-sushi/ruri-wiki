@@ -624,6 +624,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#hidepid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hidepid:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#no_new_privs" class="md-nav__link">
     <span class="md-ellipsis">
       开启no_new_privs:
@@ -828,6 +837,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#hidepid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hidepid:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#no_new_privs" class="md-nav__link">
     <span class="md-ellipsis">
       开启no_new_privs:
@@ -910,6 +928,8 @@ ruri默认已经移除了大部分可能危害宿主机的capability，但如果
 <h3 id="seccomp_1">自己编写Seccomp配置：<a class="headerlink" href="#seccomp_1" title="Permanent link">&para;</a></h3>
 <p>ruri内置的seccomp配置足以应对大多威胁，但如果你需要更激进的策略，可以手动编辑src/seccomp.c来写入自己的配置文件。      </p>
 <h2 id="_6">激进：<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="hidepid">Hidepid:<a class="headerlink" href="#hidepid" title="Permanent link">&para;</a></h3>
+<p>ruri支持为/proc设置hidepid选项，使用<code>-i 1/2</code> 来开启。     </p>
 <h3 id="no_new_privs">开启no_new_privs:<a class="headerlink" href="#no_new_privs" title="Permanent link">&para;</a></h3>
 <p>您可以使用<code>-n</code>选项来开启NO_NEW_PRIVS,开启后sudo等程序将无法运行。      </p>
 <h3 id="_7">挂载根目录为只读：<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
