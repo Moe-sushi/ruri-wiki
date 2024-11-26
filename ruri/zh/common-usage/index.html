@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://wiki.crack.moe/ruri/zh/container-security/">
+        <link rel="canonical" href="https://wiki.crack.moe/ruri/zh/common-usage/">
       
       
-        <link rel="prev" href="../common-usage/">
+        <link rel="prev" href="../quickstart/">
       
+      
+        <link rel="next" href="../container-security/">
       
       
       <link rel="icon" href="/ruri/assets/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>容器安全 - ruri offcial wiki</title>
+        <title>日常使用 - ruri offcial wiki</title>
       
     
     
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              容器安全
+              日常使用
             
           </span>
         </div>
@@ -475,27 +477,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../common-usage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    日常使用
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -512,7 +493,7 @@
           
   
   <span class="md-ellipsis">
-    容器安全
+    日常使用
   </span>
   
 
@@ -523,7 +504,7 @@
         
   
   <span class="md-ellipsis">
-    容器安全
+    日常使用
   </span>
   
 
@@ -547,32 +528,22 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      日常：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="日常：">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rootless" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用rootless容器：
+      关于权限：
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      使用普通用户：
+      安全停止容器：
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#unshare" class="md-nav__link">
     <span class="md-ellipsis">
       开启unshare：
@@ -580,136 +551,29 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#capabilities" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#capability" class="md-nav__link">
     <span class="md-ellipsis">
-      Capabilities（权限集合）：
+      capability控制：
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#rurienv" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭.rurienv支持：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      设置内存/cpu限制:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      挂载外部挂载点为只读:
+      挂载宿主机目录：
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seccomp" class="md-nav__link">
-    <span class="md-ellipsis">
-      开启seccomp：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      极客:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="极客:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#seccomp_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      自己编写Seccomp配置：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      激进：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="激进：">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hidepid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hidepid:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#no_new_privs" class="md-nav__link">
-    <span class="md-ellipsis">
-      开启no_new_privs:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      挂载根目录为只读：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      禁用网络：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      默认安全保护：
+      网络问题：
     </span>
   </a>
   
@@ -719,6 +583,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../container-security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    容器安全
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -760,32 +645,22 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      日常：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="日常：">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rootless" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用rootless容器：
+      关于权限：
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      使用普通用户：
+      安全停止容器：
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#unshare" class="md-nav__link">
     <span class="md-ellipsis">
       开启unshare：
@@ -793,136 +668,29 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#capabilities" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#capability" class="md-nav__link">
     <span class="md-ellipsis">
-      Capabilities（权限集合）：
+      capability控制：
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#rurienv" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭.rurienv支持：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      设置内存/cpu限制:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      挂载外部挂载点为只读:
+      挂载宿主机目录：
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#seccomp" class="md-nav__link">
-    <span class="md-ellipsis">
-      开启seccomp：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      极客:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="极客:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#seccomp_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      自己编写Seccomp配置：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      激进：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="激进：">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hidepid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hidepid:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#no_new_privs" class="md-nav__link">
-    <span class="md-ellipsis">
-      开启no_new_privs:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      挂载根目录为只读：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      禁用网络：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      默认安全保护：
+      网络问题：
     </span>
   </a>
   
@@ -943,48 +711,27 @@
                   
 
 
-<h1 id="_1">如何增强容器安全：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>ruri提供一系列安全选项，下面是它们的使用说明：      </p>
-<h2 id="_2">日常：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="rootless">使用rootless容器：<a class="headerlink" href="#rootless" title="Permanent link">&para;</a></h3>
-<p>在现代的GNU/Linux上，一般只要配置好/etc/subuid和/etc/subgid，安装uidmap（shadow）包，即可使用rotless容器。    <br />
-如果你的设备支持，可以使用<code>-r</code>选项来以普通用户运行无特权容器。      </p>
-<h3 id="_3">使用普通用户：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>如果你的设备不支持，你还有一个选项，在容器中创建一个普通用户，并使用<code>-E username</code>选项来使用普通用户在容器中运行命令。请确保username在容器的/etc/passwd中有正确记录。    <br />
-如果你不需要使用sudo，可以同时开启no_new_privs（<code>-n</code>）选项。      </p>
-<h3 id="unshare">开启unshare：<a class="headerlink" href="#unshare" title="Permanent link">&para;</a></h3>
-<p>ruri支持除网络外的常用命名空间（网络命名空间仅用于禁用网络），你可以使用<code>-u</code>选项尝试开启支持的命名空间。    <br />
-unshare功能至少依赖mount ns，并会默认使用pivot_root(2)来替代chroot(2)来提供更高的安全性。      </p>
-<h3 id="capabilities">Capabilities（权限集合）：<a class="headerlink" href="#capabilities" title="Permanent link">&para;</a></h3>
-<p>ruri支持Linux的capability控制，你可以使用<code>-d cap/num</code>来移除一个capability，<code>-k</code>来保留。    <br />
-ruri默认已经移除了大部分可能危害宿主机的capability，但如果你有其他不需要的特权，也可以选择移除。      </p>
-<h3 id="rurienv">关闭.rurienv支持：<a class="headerlink" href="#rurienv" title="Permanent link">&para;</a></h3>
-<p>ruri默认会在容器中创建<code>/.rurienv</code>来统一容器配置，这份配置文件通过设置只读属性（immutable）和移除容器修改此属性的特权（CAP_LINUX_IMMUTABLE）来保证安全，如果你觉得还不够安全，可以使用<code>-N</code>选项禁用此文件。     </p>
-<h3 id="cpu">设置内存/cpu限制:<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h3>
-<p>ruri支持cgroup的memory/cpu/cpuset控制组，你可以使用<code>-l</code>选项来设置这些限制。      </p>
-<h3 id="_4">挂载外部挂载点为只读:<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>ruri支持挂载外部挂载点为只读，如果你只需要访问文件而不需要修改，请使用<code>-M</code>选项来代替<code>-m</code>选项。      </p>
-<h3 id="seccomp">开启seccomp：<a class="headerlink" href="#seccomp" title="Permanent link">&para;</a></h3>
-<p>ruri内置了一份黑名单模式seccomp配置，你可以使用<code>-s</code>选项来开启它。      </p>
-<h2 id="_5">极客:<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="seccomp_1">自己编写Seccomp配置：<a class="headerlink" href="#seccomp_1" title="Permanent link">&para;</a></h3>
-<p>ruri内置的seccomp配置足以应对大多威胁，但如果你需要更激进的策略，可以手动编辑src/seccomp.c来写入自己的配置文件。      </p>
-<h2 id="_6">激进：<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<h3 id="hidepid">Hidepid:<a class="headerlink" href="#hidepid" title="Permanent link">&para;</a></h3>
-<p>ruri支持为/proc设置hidepid选项，使用<code>-i 1/2</code> 来开启。     </p>
-<h3 id="no_new_privs">开启no_new_privs:<a class="headerlink" href="#no_new_privs" title="Permanent link">&para;</a></h3>
-<p>您可以使用<code>-n</code>选项来开启NO_NEW_PRIVS,开启后sudo等程序将无法运行。      </p>
-<h3 id="_7">挂载根目录为只读：<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p>您可以使用<code>-R</code>选项来使整个容器根目录只读。开启后，/sys和/proc也将为完全只读。     </p>
-<h3 id="_8">禁用网络：<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p>您可以使用<code>-x</code>选项来完全禁用容器网络，这需要NET命名空间，并会自动开启unshare。      </p>
-<h2 id="_9">默认安全保护：<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>ruri默认还提供如下安全防护：      </p>
-<ul>
-<li>/dev下只创建必须文件      </li>
-<li>/sys和/proc下部分敏感目录/文件为只读，部分被直接屏蔽      </li>
-<li>移除大部分可能导致危害宿主机的特权      </li>
-</ul>
+<h1 id="_1">日常使用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">关于权限：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>ruri的大部分功能依赖root权限（sudo），除rootless部分外。    </p>
+<h2 id="_3">安全停止容器：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>您可以使用<code>-U [容器目录/配置文件]</code>来安全的卸载容器并（尽可能）杀死容器进程。       </p>
+<h2 id="unshare">开启unshare：<a class="headerlink" href="#unshare" title="Permanent link">&para;</a></h2>
+<p>您可以使用<code>-u</code>选项来开启unshare功能，这通常不会影响容器运行并将提供更高安全性。      </p>
+<h2 id="capability">capability控制：<a class="headerlink" href="#capability" title="Permanent link">&para;</a></h2>
+<p>ruri内置了capability控制功能，您可以通过<code>-k capability</code>来保留某个cpability，使用<code>-d capability</code>来移除。注意capability应该全部小写。       </p>
+<h2 id="_4">挂载宿主机目录：<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>你可以通过像<code>-m /sdcard /sdcard</code>的方式来挂载宿主机目录进容器。      </p>
+<h2 id="_5">网络问题：<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>您可能会遇到像<code>temporary failure resolving xxxxx</code>或<code>bad address xxxxx</code>的错误。  <br />
+可以尝试在容器中运行：    <br />
+<pre class="highlight"><code class="language-sh">rm /etc/resolv.conf
+echo nameserver 1.1.1.1 &gt; /etc/resolv.conf</code></pre>
+或者对于Android，您可尝试在容器中运行 https://github.com/Moe-hacker/daijin/raw/refs/heads/main/src/share/fixup.sh      </p>
+<h1 id="rootless">关于rootless容器：<a class="headerlink" href="#rootless" title="Permanent link">&para;</a></h1>
+<p>如果在容器中遇到 <code>Couldn't create temporary file /tmp/apt.conf.sIKx3J for passing config to apt-key</code> 这样的错误，请 <code>chmod 777 /tmp</code>。 <br />
+您需要在宿主机上安装 uidmap。 <br />
+您可能需要在宿主机上配置/etc/subuid和/etc/subgid。       </p>
 
 
 
