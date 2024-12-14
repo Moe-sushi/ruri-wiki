@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://wiki.crack.moe/ruri/zh/quickstart/">
+        <link rel="canonical" href="https://wiki.crack.moe/ruri/zh/mount-resources/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../container-security/">
       
-      
-        <link rel="next" href="../common-usage/">
       
       
       <link rel="icon" href="/ruri/assets/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>快速开始 - ruri offcial wiki</title>
+        <title>挂载系统资源 - ruri offcial wiki</title>
       
     
     
@@ -111,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              快速开始
+              挂载系统资源
             
           </span>
         </div>
@@ -477,30 +475,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    快速开始
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,95 +487,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ruri" class="md-nav__link">
-    <span class="md-ellipsis">
-      下载ruri：
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rootfs" class="md-nav__link">
-    <span class="md-ellipsis">
-      获取一个rootfs：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="获取一个rootfs：">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rurima" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用rurima（推荐）：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rootfstool" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用rootfstool（已废弃）：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置dns：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      运行容器：
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      完结撒花～
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -649,10 +538,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mount-resources/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    挂载系统资源
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -661,6 +570,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      挂载文件：
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="挂载文件：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      块设备：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      镜像文件：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      根目录：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他文件：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加字符设备：
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -700,46 +698,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ruri" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      下载ruri：
+      挂载文件：
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rootfs" class="md-nav__link">
-    <span class="md-ellipsis">
-      获取一个rootfs：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="获取一个rootfs：">
+    <nav class="md-nav" aria-label="挂载文件：">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rurima" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      使用rurima（推荐）：
+      目录：
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rootfstool" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      使用rootfstool（已废弃）：
+      块设备：
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dns" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      配置dns：
+      镜像文件：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      根目录：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他文件：
     </span>
   </a>
   
@@ -751,18 +758,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      运行容器：
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      完结撒花～
+      添加字符设备：
     </span>
   </a>
   
@@ -783,30 +781,21 @@
                   
 
 
-<h1 id="_1">快速开始<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="ruri">下载ruri：<a class="headerlink" href="#ruri" title="Permanent link">&para;</a></h2>
-<p>ruri为arm64, armv7, armhf, riscv64, i386, loong64, s390x, ppc64le和x86_64平台提供官方二进制，使用以下命令自动下载二进制为./ruri:     <br />
-<pre class="highlight"><code class="language-sh">wget -q -O - https://getruri.crack.moe | bash -s -- -s</code></pre></p>
-<h2 id="rootfs">获取一个rootfs：<a class="headerlink" href="#rootfs" title="Permanent link">&para;</a></h2>
-<h3 id="rurima">使用rurima（推荐）：<a class="headerlink" href="#rurima" title="Permanent link">&para;</a></h3>
-<p>获取alpine edge镜像:   <br />
-<pre class="highlight"><code class="language-sh">wget -q -O - https://getrurima.crack.moe | bash -s -- -s
-sudo ./rurima lxc pull -o alpine -v edge -s ./test </code></pre>
-BTW, rurima已经完整内置了ruri，所以事实上大家只需要一个rurima然后<code>rurima r</code>就能调用ruri。    <br />
-<del>所以我们还下载ruri干什么呢</del>      </p>
-<h3 id="rootfstool">使用rootfstool（已废弃）：<a class="headerlink" href="#rootfstool" title="Permanent link">&para;</a></h3>
-<p>获取alpine edge镜像:    <br />
-<pre class="highlight"><code class="language-sh">git clone https://github.com/Moe-hacker/rootfstool
-./rootfstool/rootfstool download -d alpine -v edge
-mkdir test
-sudo tar -xvf rootfs.tar.xz -C test
-rm rootfs.tar.xz</code></pre></p>
-<h3 id="dns">配置dns：<a class="headerlink" href="#dns" title="Permanent link">&para;</a></h3>
-<pre class="highlight"><code class="language-sh">sudo rm test/etc/resolv.conf
-echo nameserver 1.1.1.1|sudo tee test/etc/resolv.conf</code></pre>
-<h2 id="_2">运行容器：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<pre class="highlight"><code class="language-sh">sudo ./ruri ./test</code></pre>
-<h2 id="_3">完结撒花～<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h1 id="_1">挂载系统资源<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">挂载文件：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>ruri内置强大的挂载参数，您可以使用<code>-m</code>来挂载文件，<code>-M</code>来只读挂载。       </p>
+<h3 id="_3">目录：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>例如，<code>-m /sdcard /sdcard</code>来挂载宿主机/sdcard到容器的/sdcard，当然这并不安全，推荐的方式是通过<code>-M /sdcard /sdcard</code>来实现只读挂载。      </p>
+<h3 id="_4">块设备：<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>例如，您可以使用<code>-m /dev/sda /mnt</code>挂载/dev/sda到/mnt。     </p>
+<h3 id="_5">镜像文件：<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>例如，您可以使用<code>-m ./1.img /mnt</code>挂载./1.img到/mnt。      </p>
+<h3 id="_6">根目录：<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>使用<code>-m 资源 /</code>来预先挂载根目录，例如，<code>-m ./rootfs.img /</code>可以将./rootfs.img挂载为容器根目录。       </p>
+<h3 id="_7">其他文件：<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>ruri支持单个文件挂载，如<code>-m /tmp/1.sock /tmp/1.sock</code>理论上也是可行的。      </p>
+<h2 id="_8">添加字符设备：<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>ruri支持使用<code>-I 文件名 主设备号 次设备号</code>来在/dev下添加字符设备，例如<code>-I kvm 10 232</code>或<code>-I dri/card0 226 0</code>。      </p>
 
 
 

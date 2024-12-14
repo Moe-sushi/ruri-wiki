@@ -14,6 +14,8 @@
         <link rel="prev" href="../common-usage/">
       
       
+        <link rel="next" href="../mount-resources/">
+      
       
       <link rel="icon" href="/ruri/assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
@@ -385,6 +387,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/mount-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mounting System Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -724,6 +747,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mount-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    挂载系统资源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -947,7 +991,7 @@
 <p>ruri提供一系列安全选项，下面是它们的使用说明：      </p>
 <h2 id="_2">日常：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="rootless">使用rootless容器：<a class="headerlink" href="#rootless" title="Permanent link">&para;</a></h3>
-<p>在现代的GNU/Linux上，一般只要配置好/etc/subuid和/etc/subgid，安装uidmap（shadow）包，即可使用rotless容器。    <br />
+<p>在现代的GNU/Linux上，一般只要配置好/etc/subuid和/etc/subgid，安装uidmap（shadow）包，即可使用rootless容器。    <br />
 如果你的设备支持，可以使用<code>-r</code>选项来以普通用户运行无特权容器。      </p>
 <h3 id="_3">使用普通用户：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>如果你的设备不支持，你还有一个选项，在容器中创建一个普通用户，并使用<code>-E username</code>选项来使用普通用户在容器中运行命令。请确保username在容器的/etc/passwd中有正确记录。    <br />
